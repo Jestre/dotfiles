@@ -1,14 +1,26 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/swschulz/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="ys"
+BULLETTRAIN_PROMPT_ORDER=(
+    time
+    status
+    custom
+    dir
+    screen
+    virtualenv
+    go
+    elixir
+    git
+    cmd_exec_time
+  )
 ZSH_THEME="bullet-train"
-BULLETTRAIN_RUBY_SHOW="false"
 #ZSH_THEME="agnoster"
+#ZSH_THEME="refined"
 
 DEFAULT_USER="swschulz"
 
@@ -46,6 +58,8 @@ DEFAULT_USER="swschulz"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+WORKON_HOME=${HOME}/.virtualenvs
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse powerline)
@@ -56,6 +70,7 @@ plugins=(git virtualenvwrapper taskwarrior)
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+source "/usr/local/share/todoist/todoist_functions.sh"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,6 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+##SwS: export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
