@@ -72,6 +72,7 @@ plugins=(git virtualenvwrapper taskwarrior)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 source "/usr/local/share/todoist/todoist_functions.sh"
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
