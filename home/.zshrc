@@ -14,7 +14,6 @@ BULLETTRAIN_PROMPT_ORDER=(
     dir
     screen
     virtualenv
-    go
     elixir
     git
     cmd_exec_time
