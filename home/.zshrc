@@ -64,7 +64,7 @@ WORKON_HOME=${HOME}/.virtualenvs
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse powerline)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenvwrapper taskwarrior)
+plugins=(git virtualenvwrapper osx)
 
 # User configuration
 
